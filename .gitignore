@@ -1,1 +1,4 @@
 out/
+
+# >100 MB, read README
+tools/lib64/libart.so
