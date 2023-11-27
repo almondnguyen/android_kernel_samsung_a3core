@@ -368,7 +368,7 @@ static int __init lookat_debug_init(void)
 	if (of_device_is_compatible(regmap_np->parent, "sprd,sc2730"))
 		lookat_desc.slave_offset = ADI_15BIT_OFFSET;
 	else
-		lookat_desc.slave_offset = (u32)lookat_id->data;
+		lookat_desc.slave_offset = (u64)lookat_id->data;
 
 	pdev_regmap = of_find_device_by_node(regmap_np);
 	if (!pdev_regmap)
